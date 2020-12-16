@@ -1,0 +1,17 @@
+diff --git a/inst/www/shared/selectize/accessibility/js/selectize-plugin-a11y.js b/inst/www/shared/selectize/accessibility/js/selectize-plugin-a11y.js
+index a3d57c9e..5646f882 100644
+--- a/inst/www/shared/selectize/accessibility/js/selectize-plugin-a11y.js
++++ b/inst/www/shared/selectize/accessibility/js/selectize-plugin-a11y.js
+@@ -121,12 +121,6 @@ Selectize.define("selectize-plugin-a11y", function (options) {
+       var inputId = self.accessibility.helpers.randomId(),
+         listboxId = self.accessibility.helpers.randomId();
+ 
+-      self.$control.on("keydown", function (e) {
+-        if (e.keyCode === KEY_RETURN) {
+-          $(this).click();
+-        }
+-      });
+-
+       self.$control_input.attr({
+         role: "combobox",
+         "aria-expanded": "false",
